@@ -181,3 +181,32 @@
 - 每次生成后，必须更新本文件的“当前状态”部分，作为下一次去重依据。
 - 如遇 Telegram 发送失败，记录失败段落并重试，不影响本地文件生成。
 ```
+
+下面是一个例子
+No, You Don’t Get an A for Effort
+By Adam Grant
+After 20 years of teaching, I thought I’d heard every argument in the book from students who wanted a better grade. But recently, at the end of a weeklong course with a light workload, multiple students had a new complaint: “My grade doesn’t reflect the effort I put into this course.”
+
+High marks are for excellence, not grit. In the past, students understood that hard work was not sufficient; an A required great work. Yet today, many students expect to be rewarded for the quantity of their effort rather than the quality of their knowledge. In surveys, two-thirds of college students say that “trying hard” should be a factor in their grades, and a third think they should get at least a B just for showing up at (most) classes.
+
+This isn’t Gen Z’s fault. It’s the result of a misunderstanding about one of the most popular educational theories.
+
+More than a generation ago, the psychologist Carol Dweck published groundbreaking experiments that changed how many parents and teachers talk to kids. Praising kids for their abilities undermined their resilience, making them more likely to get discouraged or give up when they encountered setbacks. They developed what came to be known as a fixed mind-set: They thought that success depended on innate talent and that they didn’t have the right stuff. To persist and learn in the face of challenges, kids needed to believe that skills are malleable. And the best way to nurture this growth mind-set was to shift from praising intelligence to praising effort.
+
+The idea of lauding persistence quickly made its way into viral articles, best-selling books and popular TED talks. It resonated with the Protestant work ethic and reinforced the American dream that with hard work, anyone could achieve success.
+
+Psychologists have long found that rewarding effort cultivates a strong work ethic and reinforces learning. That’s especially important in a world that often favors naturals over strivers — and for students who weren’t born into comfort or don’t have a record of achievement. (And it’s far preferable to the other corrective: participation trophy culture, which celebrates kids for just showing up.)
+
+The problem is that we’ve taken the practice of celebrating industriousness too far. We’ve gone from commending effort to treating it as an end in itself. We’ve taught a generation of kids that their worth is defined primarily by their work ethic. We’ve failed to remind them that working hard doesn’t guarantee doing a good job (let alone being a good person). And that does students a disservice.
+
+In one study, people filled out a questionnaire to assess their grit. Then they were presented with puzzles that — secretly — had been designed to be impossible. If there wasn’t a time limit, the higher people scored on grit, the more likely they were to keep banging away at a task they were never going to accomplish.
+
+This is what worries me most about valuing perseverance above all else: It can motivate people to stick with bad strategies instead of developing better ones. With students, a textbook example is pulling all-nighters rather than spacing out their studying over a few days. If they don’t get an A, they often protest.
+
+Of course, grade grubbing isn’t necessarily a sign of entitlement. If many students are working hard without succeeding, it could be a sign that the teacher is doing something wrong — poor instruction, an unreasonable workload, excessively difficult standards or unfair grading policies. At the same time, it’s our responsibility to tell students who burn the midnight oil that although their B– might not have fully reflected their dedication, it speaks volumes about their sleep deprivation.
+
+Teachers and parents owe kids a more balanced message. There’s a reason we award Olympic medals to the athletes who swim the fastest, not the ones who train the hardest. What counts is not sheer effort but the progress and performance that result. Motivation is only one of multiple variables in the achievement equation. Ability, opportunity and luck count, too. Yes, you can get better at anything, but you can’t be great at everything.
+
+The ideal response to a disappointing grade is not to complain that your diligence wasn’t rewarded. It’s to ask how you could have gotten a better return on your investment. Trying harder isn’t always the answer. Sometimes it’s working smarter, and other times it’s working on something else altogether.
+
+Every teacher should be rooting for students to succeed. In my classes, students are assessed on the quality of their written essays, class participation, group presentations and final papers or exams. I make it clear that my goal is to give as many A’s as possible. But they’re not granted for effort itself; they’re earned through mastery of the material. The true measure of learning is not the time and energy you put in. It’s the knowledge and skills you take out.
