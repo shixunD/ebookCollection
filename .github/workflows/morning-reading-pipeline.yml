@@ -28,7 +28,7 @@ jobs:
           echo "file=$FILE" >> $GITHUB_OUTPUT
           echo "date=$DATE" >> $GITHUB_OUTPUT
 
-      - name: Build plain text and send to ntfy + Telegram + update RSS
+      - name: Build plain text, send notifications, update RSS
         env:
           DATE: ${{ steps.file.outputs.date }}
           FILE: ${{ steps.file.outputs.file }}
@@ -40,7 +40,7 @@ jobs:
           SEED_A=$(grep "🎲 种子 A" "$FILE" | sed 's/.*🎲 种子 A：//' | head -1)
           SEED_B=$(grep "🎲 种子 B" "$FILE" | sed 's/.*🎲 种子 B：//' | head -1)
 
-          # Build plain text body: seeds header + stripped markdown articles
+          # Build plain text
           {
             echo "$NICE_DATE"
             echo ""
@@ -59,23 +59,63 @@ jobs:
           } > /tmp/plain.txt
 
           # Send to ntfy.sh
-          echo "Sending to ntfy.sh..."
-          curl -X POST "https://ntfy.sh/morningreadingjk" \
+          curl -s -X POST "https://ntfy.sh/morningreadingjk" \
             -H "Title: $NICE_DATE" \
             -H "Priority: default" \
             -H "Tags: books,morning" \
             -H "Content-Type: text/plain" \
-            --data-binary @/tmp/plain.txt || echo "ntfy.sh send failed"
+            --data-binary @/tmp/plain.txt || echo "ntfy failed"
 
-          # Send to Telegram
-          echo "Sending to Telegram..."
-          PLAIN_TEXT=$(cat /tmp/plain.txt | head -4000)
-          ESCAPED_TEXT=$(echo "$PLAIN_TEXT" | sed 's/"/\\"/g' | sed 's/\$/\\$/g' | sed 's/\\/\\\\/g')
-          
-          curl -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-            -H "Content-Type: application/json" \
-            -d "{\"chat_id\": $TELEGRAM_CHAT_ID, \"text\": \"📖 Morning Reading - $NICE_DATE\n\n$ESCAPED_TEXT\", \"parse_mode\": \"Markdown\"}" \
-            || echo "Telegram send failed"
+          # Send to Telegram (split into chunks at paragraph boundaries)
+          export NICE_DATE
+          python3 << 'PYEOF'
+import os, json, urllib.request, urllib.error, time
+
+token = os.environ['TELEGRAM_BOT_TOKEN']
+chat_id = os.environ['TELEGRAM_CHAT_ID']
+nice_date = os.environ['NICE_DATE']
+
+with open('/tmp/plain.txt', 'r') as f:
+    text = f.read()
+
+def send_telegram(message):
+    url = f"https://api.telegram.org/bot{token}/sendMessage"
+    payload = json.dumps({
+        "chat_id": chat_id,
+        "text": message,
+        "parse_mode": "HTML"
+    }).encode()
+    req = urllib.request.Request(url, data=payload,
+          headers={"Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(req) as r:
+            print(f"Telegram OK: {r.status}")
+    except urllib.error.HTTPError as e:
+        print(f"Telegram error: {e.code} {e.read()}")
+
+def split_chunks(text, max_len=4000):
+    paragraphs = text.split('\n\n')
+    chunks = []
+    current = ""
+    for para in paragraphs:
+        if len(current) + len(para) + 2 > max_len:
+            if current:
+                chunks.append(current.strip())
+            current = para
+        else:
+            current = current + "\n\n" + para if current else para
+    if current.strip():
+        chunks.append(current.strip())
+    return chunks
+
+chunks = split_chunks(text)
+print(f"Sending {len(chunks)} Telegram message(s)...")
+for i, chunk in enumerate(chunks):
+    prefix = f"📖 <b>Morning Reading — {nice_date}</b> ({i+1}/{len(chunks)})\n\n" if i == 0 else f"({i+1}/{len(chunks)})\n\n"
+    send_telegram(prefix + chunk)
+    if i < len(chunks) - 1:
+        time.sleep(1)
+PYEOF
 
           # Update RSS on main branch
           git config user.name "github-actions[bot]"
@@ -86,68 +126,65 @@ jobs:
 
           export DATE NICE_DATE SEED_A SEED_B
           python3 << 'PYEOF'
-          import os, html
-          from email.utils import format_datetime
-          from datetime import datetime, timezone, timedelta
+import os, html
+from email.utils import format_datetime
+from datetime import datetime, timezone, timedelta
 
-          date_str = os.environ['DATE']
-          nice_date = os.environ['NICE_DATE']
-          seed_a = os.environ['SEED_A']
-          seed_b = os.environ['SEED_B']
+date_str = os.environ['DATE']
+nice_date = os.environ['NICE_DATE']
+seed_a = os.environ['SEED_A']
+seed_b = os.environ['SEED_B']
 
-          with open('/tmp/plain.txt', 'r') as f:
-              content = f.read()
+with open('/tmp/plain.txt', 'r') as f:
+    content = f.read()
 
-          tz = timezone(timedelta(hours=8))
-          y, m, d = [int(x) for x in date_str.split('-')]
-          dt = datetime(y, m, d, 7, 0, 0, tzinfo=tz)
-          pub_date = format_datetime(dt)
+tz = timezone(timedelta(hours=8))
+y, m, d = [int(x) for x in date_str.split('-')]
+dt = datetime(y, m, d, 7, 0, 0, tzinfo=tz)
+pub_date = format_datetime(dt)
 
-          item_title = f"{nice_date} — A: {seed_a[:60]}... | B: {seed_b[:60]}..."
-          guid = f"morning-{date_str}"
+item_title = f"{nice_date} — A: {seed_a[:60]}... | B: {seed_b[:60]}..."
+guid = f"morning-{date_str}"
 
-          new_item = f"""    <item>
-            <title>{html.escape(item_title)}</title>
-            <pubDate>{pub_date}</pubDate>
-            <guid isPermaLink="false">{guid}</guid>
-            <content:encoded><![CDATA[{content}]]></content:encoded>
-          </item>"""
+new_item = f"""    <item>
+      <title>{html.escape(item_title)}</title>
+      <pubDate>{pub_date}</pubDate>
+      <guid isPermaLink="false">{guid}</guid>
+      <content:encoded><![CDATA[{content}]]></content:encoded>
+    </item>"""
 
-          try:
-              with open('rss.xml', 'r') as f:
-                  rss = f.read()
-              if guid in rss:
-                  print(f"Entry {guid} already exists, skipping.")
-              elif '<item>' in rss:
-                  rss = rss.replace('<item>', new_item + '\n    <item>', 1)
-                  with open('rss.xml', 'w') as f:
-                      f.write(rss)
-                  print(f"Updated RSS with {guid}")
-              else:
-                  rss = rss.replace('</channel>', new_item + '\n  </channel>')
-                  with open('rss.xml', 'w') as f:
-                      f.write(rss)
-                  print(f"Created first item {guid}")
-          except FileNotFoundError:
-              rss = f"""<?xml version="1.0" encoding="UTF-8"?>
-          <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-            <channel>
-              <title>Morning Reading</title>
-              <link>https://github.com/shixunD/ebookCollection</link>
-              <description>Daily English morning reading on psychology, behavioral science, and human potential</description>
-              <language>en</language>
-          {new_item}
-            </channel>
-          </rss>"""
-              with open('rss.xml', 'w') as f:
-                  f.write(rss)
-              print(f"Created new RSS with {guid}")
-          PYEOF
+try:
+    with open('rss.xml', 'r') as f:
+        rss = f.read()
+    if guid in rss:
+        print(f"Entry {guid} already exists, skipping.")
+    elif '<item>' in rss:
+        rss = rss.replace('<item>', new_item + '\n    <item>', 1)
+        with open('rss.xml', 'w') as f:
+            f.write(rss)
+    else:
+        rss = rss.replace('</channel>', new_item + '\n  </channel>')
+        with open('rss.xml', 'w') as f:
+            f.write(rss)
+except FileNotFoundError:
+    rss = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Morning Reading</title>
+    <link>https://github.com/shixunD/ebookCollection</link>
+    <description>Daily English morning reading on psychology, behavioral science, and human potential</description>
+    <language>en</language>
+{new_item}
+  </channel>
+</rss>"""
+    with open('rss.xml', 'w') as f:
+        f.write(rss)
+PYEOF
 
           git add rss.xml
           if ! git diff --staged --quiet; then
-              git commit -m "RSS: Add morning reading $DATE"
-              git push origin main
+            git commit -m "RSS: Add morning reading $DATE"
+            git push origin main
           fi
           git checkout "$CURRENT_BRANCH"
 
