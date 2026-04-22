@@ -1,3 +1,4 @@
+```markdown name=CLAUDE.md
 # Morning Reading Generation Guide
 
 ## 角色定位
@@ -17,32 +18,21 @@
 ---
 
 ## 前置规则：每周轮换计划（台北时间）
-每周7天（周一到周日），使用以下规则随机分配素材来源类型：
-- 共7天中：2–3天使用素材来源 1+2（RSS + Gmail newsletter）
-- 共7天中：3–4天使用素材来源 3（电子书）
-- 共7天中：1–2天使用自由推荐（来源不限）
+每周 7 天（周一到周日），仅使用以下两类来源：
 
-每次运行时，根据本周已运行天数和已用类型，随机决定今天使用哪类来源，确保一周结束时三类来源的使用次数落在上述范围内。
+- 共 7 天中：4–5 天使用素材来源 3（电子书）
+- 共 7 天中：2–3 天使用素材来源 4（自由推荐）
+
+每次运行时，根据本周已运行天数和已用类型，随机决定今天使用哪类来源，确保一周结束时两类来源的使用次数落在上述范围内。
 
 **在回复开头注明今日来源类型，例如：**
 ```
-📅 今日类型：素材来源 3（电子书）｜本周已用：RSS×1 / 书×2 / 自由×0
+📅 今日类型：素材来源 3（电子书）｜本周已用：电子书×2 / 自由×1
 ```
 
 ---
 
 ## 素材来源
-
-### 素材来源 1 — RSS（获取最近 30 篇）
-- Morgan Housel：https://morganhousel.substack.com/feed
-- Sahil Bloom：https://sahilbloom.substack.com/feed
-- Brené Brown：https://brenebrown.com/feed/
-- Adam Grant：https://adamgrant.substack.com/feed
-- Arthur Brooks：https://www.theatlantic.com/feed/author/arthur-c-brooks/
-
-### 素材来源 2 — Gmail
-通过已授权的 Gmail connector，读取三个月内 newsletter 的邮件。
-若 Gmail 未连接，跳过此来源并在回复开头注明 "⚠ Gmail 未连接，本次仅使用 RSS"。
 
 ### 素材来源 3 — 电子书
 本仓库内的电子书文件：
@@ -64,14 +54,17 @@
 
 ## 工作流程
 
-### 第一步：回顾历史，建立"已用清单"
-通读 git 历史中所有 `morning_*.md` 文件，整理已涵盖过的主题、核心概念、作者观点（附日期），以及书籍覆盖进度。
-- 查看 git log：`git log --oneline -- morning_*.md`
-- 查看最新文件内容确认已用清单和书籍进度
+### 第一步：读取当前状态，建立“已用清单”
+不再通读 git 历史中的所有 `morning_*.md` 文件。  
+改为只读取本文件（`CLAUDE.md`）中的 **“当前状态”** 区块，作为唯一的“已用清单”与“覆盖进度”依据：
+
+- 本周使用记录
+- 书籍覆盖进度
+- 近期已用话题（简表）
 
 ### 第二步：按今日来源类型抓取素材
-根据轮换规则，确定今日来源类型，从对应渠道获取 10 个候选主题。
-与第一步的"已用清单"对比，剔除核心概念已覆盖的候选项。
+根据轮换规则，确定今日来源类型，从对应渠道获取 10 个候选主题。  
+与“当前状态”中的已用话题和书籍覆盖进度对比，剔除核心概念已覆盖的候选项。
 
 ### 第三步：选种子
 从剩余候选中选取 2 个，优先选反直觉、有震撼感、与兴趣方向契合的角度。
@@ -101,7 +94,7 @@
   ```
 
 ### 第五步：更新日志和提交
-在 git 提交前，在 `morning_YYYY-MM-DD.md` 文件末尾追加：
+在 `morning_YYYY-MM-DD.md` 文件末尾追加：
 ```
 ## 📋 已用清单更新
 
@@ -112,6 +105,8 @@
 [表格形式，记录已用过的章节/概念]
 ```
 
+并且**同步更新本文件 `CLAUDE.md` 的“当前状态”区块**（至少更新“最后更新日期 / 本周使用记录 / 书籍覆盖进度 / 近期已用话题”）。
+
 最后 git add + commit + push 到 `claude/optimistic-hawking-KmeLl` 分支。
 
 ---
@@ -120,15 +115,14 @@
 
 所有以下步骤在 push `morning_*.md` 时自动触发：
 
-1. **ntfy.sh 推送**：https://ntfy.sh/morningreadingjk
-2. **Telegram 推送**：全文分段（4000 字符/条）
-3. **RSS 更新**：main 分支 rss.xml 自动更新
-4. **自动创建 PR**：feature branch → main（如果还没有）
+1. **Telegram 推送（唯一渠道）**：
+   - 自动分为三条发送：
+     1) 分析（含当日类型、种子 A/B、选题理由）
+     2) 篇章 1
+     3) 篇章 2
+   - 若任一段超过 Telegram 单条限制，自动在该段内部继续切分并保持顺序发送。
 
-**RSS 订阅链接：**
-```
-https://raw.githubusercontent.com/shixunD/ebookCollection/main/rss.xml
-```
+> 注意：不再推送到 ntfy.sh，不再更新 RSS，不再自动创建 RSS 相关内容。
 
 ---
 
@@ -140,7 +134,7 @@ https://raw.githubusercontent.com/shixunD/ebookCollection/main/rss.xml
 
 ### Branch
 - 开发分支：`claude/optimistic-hawking-KmeLl`
-- 主分支：`main`（RSS 和文章存档）
+- 主分支：`main`
 
 ### Workflow 文件
 - `.github/workflows/morning-reading-pipeline.yml`
@@ -152,20 +146,19 @@ https://raw.githubusercontent.com/shixunD/ebookCollection/main/rss.xml
 1. 启动 Claude Code：`claude code`（在此目录）
 2. 说：`开始今天的晨读生成`
 3. Claude 会自动：
-   - 读取 git 历史确认已用清单
-   - 按周轮换规则决定今日来源
+   - 读取 `CLAUDE.md` 当前状态确认已用清单
+   - 按周轮换规则决定今日来源（电子书 / 自由推荐）
    - 生成两篇文章
    - 生成 `morning_YYYY-MM-DD.md`
-   - git push → GitHub Actions 自动推送到 ntfy + Telegram + RSS
+   - 更新 `CLAUDE.md` 的“当前状态”
+   - git push → GitHub Actions 自动推送到 Telegram（三段）
 
 ---
 
-## 当前状态（最后更新：2026-04-23）
+## 当前状态（最后更新：2026-04-22）
 
 ### 本周使用记录
-- RSS：0 次（被 blocked）
-- 电子书：2 次（4/21, 4/22）
-- 自由推荐：1 次（4/23）
+
 
 ### 书籍覆盖进度
 - **From Strength to Strength** (Arthur C. Brooks)：Ch.1 striver's curse, psychoprofessional gravitation
@@ -174,12 +167,17 @@ https://raw.githubusercontent.com/shixunD/ebookCollection/main/rss.xml
 - **Hidden Potential** (Adam Grant)：Prologue, character strengths vs cognitive ability
 - 其他书籍：未使用
 
+### 近期已用话题（避免重复）
+- 2026-04-21：striver's curse 与成就陷阱
+- 2026-04-22：时间财富与“15 more visits”决策框架
+- 2026-04-23：不确定性下的控制错觉与心理韧性
+
 ---
 
 ## 注意事项
 
-- 不使用 markdown 格式提交 RSS（纯文本）
-- Telegram 会自动分段，不需要手动切割
-- 每次生成后，更新本文件的"当前状态"部分
-- 如遇 RSS feed 显示 404，检查仓库是否为 public
-- ntfy.sh 和 Telegram 是独立渠道，两个都会收到通知
+- 不再使用 RSS、不再推送 ntfy，仅推送 Telegram。
+- Telegram 推送固定优先输出三段：分析 → 篇章1 → 篇章2。
+- 每次生成后，必须更新本文件的“当前状态”部分，作为下一次去重依据。
+- 如遇 Telegram 发送失败，记录失败段落并重试，不影响本地文件生成。
+```
