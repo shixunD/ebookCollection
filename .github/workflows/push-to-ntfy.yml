@@ -27,21 +27,19 @@ jobs:
           CONTENT=$(cat "$FILE" | sed 's/\\/\\\\/g' | sed 's/"/\\"/g' | sed ':a;N;$!ba;s/\n/\\n/g')
           echo "content=$CONTENT" >> $GITHUB_OUTPUT
 
-      - name: Extract title and summary
+      - name: Extract title
         id: parse
         run: |
           FILE="${{ steps.get_file.outputs.file }}"
           TITLE=$(head -1 "$FILE" | sed 's/# //')
-          # Get first 500 chars as summary
-          SUMMARY=$(cat "$FILE" | grep -A 20 "📅" | head -15 | sed 's/\\/\\\\/g' | sed 's/"/\\"/g' | sed ':a;N;$!ba;s/\n/\\n/g')
           echo "title=$TITLE" >> $GITHUB_OUTPUT
-          echo "summary=$SUMMARY" >> $GITHUB_OUTPUT
 
-      - name: Send to ntfy.sh
+      - name: Send full content to ntfy.sh
         run: |
+          FILE="${{ steps.get_file.outputs.file }}"
           curl -X POST "https://ntfy.sh/morningreadingjk" \
             -H "Title: ${{ steps.parse.outputs.title }}" \
             -H "Priority: default" \
             -H "Tags: books,morning" \
             -H "Content-Type: text/plain" \
-            -d "${{ steps.parse.outputs.summary }}"
+            --data-binary @"$FILE"
