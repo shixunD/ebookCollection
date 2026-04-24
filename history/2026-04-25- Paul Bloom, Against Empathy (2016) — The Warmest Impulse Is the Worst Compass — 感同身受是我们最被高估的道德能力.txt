@@ -1,0 +1,33 @@
+You have probably been told, at some point, that the world needs more empathy. You have probably agreed. Most people do. It sounds so obviously right that questioning it feels almost antisocial — like arguing against kindness, or against love.
+
+Paul Bloom, a psychologist at Yale, spent years making exactly that argument. His 2016 book, Against Empathy, opens with a provocation he knows will irritate people: empathy — defined specifically as feeling what another person feels, stepping into their emotional shoes — is not a moral virtue. It is a moral liability. And the evidence, he argues, is overwhelming.
+
+Let's be careful about the terms. Bloom is not arguing against compassion, which he defines as caring about others and being motivated to help them. He is not arguing against kindness or decency. He is arguing against empathy in the strict psychological sense: the attempt to vicariously experience another person's feelings as your own. That specific impulse, he says, is a spotlight, not a floodlight. And spotlights, however bright, make terrible guides.
+
+Here is why. Empathy is innately parochial. It responds most powerfully to individual, visible, identifiable victims. When a single child falls into a well, global news coverage follows. When millions suffer from a slow-moving humanitarian crisis that is statistically documented but facially abstract, the emotional response is muted. This is not a failure of information. It is a design feature of empathy. It evolved to respond to the person in front of you, not to a spreadsheet.
+
+Psychologist Paul Slovic has a name for this: psychic numbing. His research shows that our concern for victims does not scale with their number. You care almost as much about one person as about two, and significantly more about one person than about a million. The phrase "a single death is a tragedy, a million deaths is a statistic" — often misattributed to Stalin — turns out to be a description of how human empathy actually functions, not a cynical political observation.
+
+Bloom's argument cuts further. Because empathy is spotlight-like, it is also easily hijacked. Whoever controls which individual face you see controls your moral response. Skilled politicians, marketers, and demagogues have always known this. You don't move people with data. You move them with a story about one person. Empathy, activated this way, doesn't clarify moral reasoning — it overrides it.
+
+Consider a classic study in which people were asked to allocate a scarce medical resource. When told about a specific child waiting for treatment, participants consistently bumped that child to the front of the queue — even when doing so was explicitly unfair to others who had been waiting longer and were in greater need. Empathy did not produce good outcomes. It produced preferential treatment for the most emotionally salient case.
+
+This is the core problem. Empathy feels like moral clarity. It feels like we are finally seeing clearly, finally connecting to what matters. But what it actually produces is a kind of moral tunnel vision. We optimize for the suffering we can feel, and ignore the suffering we cannot. We help the crying face on the screen and overlook the systemic problem that put her there.
+
+Bloom contrasts this with what he calls rational compassion. This is the posture of the effective altruist, the careful doctor, the thoughtful policymaker. It involves caring about wellbeing — deeply — while using reason, evidence, and perspective-taking (distinct from empathy) to guide action toward the greatest benefit. The effective altruist who donates to malaria nets rather than a local GoFundMe is not less caring than the person who weeps at individual stories. They are channeling care through a better system.
+
+Now, Bloom is careful to note that empathy is not always harmful in individual relationships. Between close friends, between parent and child, between partners — emotional resonance, shared feeling, being truly witnessed: these matter enormously. The problem is when we scale empathy up and use it as a guide for ethics at the level of institutions, policy, and collective action. That is where its biases metastasize.
+
+What is the alternative? Bloom calls it being a good doctor rather than a good friend. A good doctor cares about your wellbeing without being destabilized by your pain. They can sit with suffering without absorbing it. They make clear-eyed decisions that serve your long-term health, not your immediate emotional relief. This is not coldness. It is a more durable, more scalable form of care.
+
+There is something uncomfortable but important here for anyone who cares about doing good — not just feeling good. The feeling of empathy is rewarding. It signals to us that we are moral, that we care, that we are the kind of person who is moved by others' pain. But that feeling, Bloom argues, is often the reward for a kind of moral performance that does not translate into actual help. We feel more, help less, and tell ourselves we are better people for it.
+
+The genuinely counterintuitive insight is this: the people who are most driven by empathy in the visceral, emotional sense are not necessarily the most effective moral actors. They may be the most susceptible to manipulation, the most prone to burnout, and the most likely to prioritize dramatic, visible suffering over quiet, structural need. Emotional resonance is not the same as moral effectiveness. And conflating the two is costing real people real help.
+
+This does not mean become numb. It means become precise. Feel what you feel — and then ask the harder question: given that I care, what is actually the best use of that care?
+
+---
+
+📌 Takeaway: The next time you feel a strong pull to help — a news story, a friend's crisis, a social media plea — pause before acting and ask: am I responding to what moves me most, or what would help most? Those two things are often not the same. Choose one action today that is guided more by reason than by emotional intensity.
+
+💡 Extension: Peter Singer in The Life You Can Save makes a complementary case from a utilitarian angle — that we have strong moral obligations to distant strangers that our empathy-wiring systematically underweights. Adam Grant in Give and Take, however, offers a partial counterpoint — that people who lead with warmth and relational attunement (what looks like empathy) are often the most sustainably effective givers, because trust is the infrastructure of real help. The tension between Bloom and Grant is not fully resolved, which is exactly what makes it worth sitting with.
