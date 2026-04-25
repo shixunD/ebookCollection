@@ -24,36 +24,47 @@ def fetch_json(url):
 
 def fetch_text(url):
     # Use the URL as-is from the GitHub API response (already properly encoded).
-    # Do NOT re-encode it — that causes double-encoding of percent signs and
-    # breaks requests for filenames that contain Unicode or special characters.
     req = urllib.request.Request(url, headers={"User-Agent": "rss-gen/1.0"})
     with urllib.request.urlopen(req) as r:
         return r.read().decode("utf-8", errors="replace")
 
 
 def parse_filename(name):
-    # Strip .txt extension
-    stem = name[:-4]
-    # Match date prefix: YYYY-MM-DD followed by optional space/dash separator
-    m = re.match(r"^(\d{4}-\d{2}-\d{2})[-\s]+(.+)$", stem)
+    """
+    Supported format: YYYY-MM-DD[-[ ]]Author, Book — Title [ — Subtitle]
+    - Date separator: dash-only OR dash-space (both accepted).
+    - Any characters are tolerated in the body: colons, semicolons,
+      quotes, parentheses, Chinese characters, etc.
+    Returns (date_str, author, book_or_body, title)
+    """
+    stem = name[:-4]  # strip .txt
+    # Match date; allow optional space after the dash separator
+    m = re.match(r"^(\d{4}-\d{2}-\d{2})-\s*(.+)$", stem)
     if not m:
         return None, stem, "", ""
     date_str = m.group(1)
     rest = m.group(2).strip()
-    # Try "Author - Title" split (first " - " only)
-    parts = rest.split(" - ", 1)
+
+    # Split on first em dash (—) to separate "Author, Book" from "Title — Subtitle"
+    parts = rest.split(" — ", 1)
     if len(parts) == 2:
-        author = parts[0].strip()
-        title_part = parts[1].strip()
+        author_book = parts[0].strip()
+        ab_parts = author_book.split(", ", 1)
+        author = ab_parts[0].strip() if len(ab_parts) == 2 else ""
+        book = ab_parts[1].strip() if len(ab_parts) == 2 else author_book
+        title = parts[1].strip()
+        subtitle = ""
+        if " — " in title:
+            t, s = title.split(" — ", 1)
+            title, subtitle = t.strip(), s.strip()
     else:
-        author = ""
-        title_part = rest.strip()
-    # Try "Title — Subtitle" split (em dash)
-    if " — " in title_part:
-        title, subtitle = title_part.split(" — ", 1)
-    else:
-        title, subtitle = title_part, ""
-    return date_str, author, title.strip(), subtitle.strip()
+        # No em dash: treat whole rest as title
+        ab_parts = rest.split(", ", 1)
+        author = ab_parts[0].strip() if len(ab_parts) == 2 else ""
+        book = ab_parts[1].strip() if len(ab_parts) == 2 else rest
+        title, subtitle = "", ""
+
+    return date_str, author, book, title
 
 
 def date_to_rfc822(date_str):
@@ -65,7 +76,12 @@ def date_to_rfc822(date_str):
 
 
 def escape_xml(s):
-    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+    return (
+        s.replace("&", "&amp;")
+         .replace("<", "&lt;")
+         .replace(">", "&gt;")
+         .replace('"', "&quot;")
+    )
 
 
 def text_to_html(text):
@@ -100,13 +116,20 @@ def main():
     for f in files:
         if not f["name"].endswith(".txt") or f.get("size", 0) == 0:
             continue
-        date_str, author, title, subtitle = parse_filename(f["name"])
-        # Use the pre-encoded download_url from the API response directly
+        date_str, author, book, title = parse_filename(f["name"])
         content = fetch_text(f["download_url"])
         html_content = text_to_html(content)
-        full_title = f"{author} – {title}" if author else title
-        if subtitle:
-            full_title += f" — {subtitle}"
+
+        # Build display title: "Author, Book — Title"
+        if author and book:
+            full_title = f"{author}, {book}"
+        elif book:
+            full_title = book
+        else:
+            full_title = f["name"][:-4]
+        if title:
+            full_title += f" — {title}"
+
         guid = f["html_url"]
         items.append({
             "title": full_title,
