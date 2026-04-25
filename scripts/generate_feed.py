@@ -27,8 +27,6 @@ def encode_url(url):
     """Percent-encode any unencoded characters in a URL while preserving
     already-encoded sequences and the URL structure (scheme, host, path, query)."""
     parsed = urllib.parse.urlsplit(url)
-    # quote path: encode everything except safe URL path characters and
-    # already-encoded percent signs so we don't double-encode.
     encoded_path = urllib.parse.quote(parsed.path, safe="/:@!$&'()*+,;=-._~%")
     return urllib.parse.urlunsplit((
         parsed.scheme, parsed.netloc, encoded_path, parsed.query, parsed.fragment
@@ -130,14 +128,21 @@ def main():
         content = fetch_text(f["download_url"])
         html_content = text_to_html(content)
 
+        # Build the body part of the title (without date)
         if author and book:
-            full_title = f"{author}, {book}"
+            body_title = f"{author}, {book}"
         elif book:
-            full_title = book
+            body_title = book
         else:
-            full_title = f["name"][:-4]
+            body_title = f["name"][:-4]  # fallback: full stem
         if title:
-            full_title += f" — {title}"
+            body_title += f" — {title}"
+
+        # Prepend date so the full filename (minus .txt) is preserved as title
+        if date_str:
+            full_title = f"{date_str}-{body_title}"
+        else:
+            full_title = body_title
 
         guid = f["html_url"]
         items.append({
