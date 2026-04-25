@@ -27,7 +27,7 @@ def fetch_text(url):
     # Normalize URLs to handle spaces/Unicode safely while avoiding double-encoding.
     parts = urlsplit(url)
     safe_path = quote(unquote(parts.path), safe="/")
-    safe_query = urlencode(parse_qsl(parts.query, keep_blank_values=True), doseq=True)
+    safe_query = urlencode(parse_qsl(parts.query, keep_blank_values=True))
     safe_url = urlunsplit((parts.scheme, parts.netloc, safe_path, safe_query, parts.fragment))
     req = urllib.request.Request(safe_url, headers={"User-Agent": "rss-gen/1.0"})
     with urllib.request.urlopen(req) as r:
