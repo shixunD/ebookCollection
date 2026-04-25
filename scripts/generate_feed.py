@@ -2,6 +2,7 @@ import json
 import os
 import re
 import urllib.request
+from urllib.parse import quote, unquote, urlsplit, urlunsplit
 from datetime import datetime, timezone
 from email.utils import format_datetime
 
@@ -23,10 +24,12 @@ def fetch_json(url):
 
 
 def fetch_text(url):
-    # Use the URL as-is from the GitHub API response (already properly encoded).
-    # Do NOT re-encode it — that causes double-encoding of percent signs and
-    # breaks requests for filenames that contain Unicode or special characters.
-    req = urllib.request.Request(url, headers={"User-Agent": "rss-gen/1.0"})
+    # Normalize URLs to handle spaces/Unicode safely while avoiding double-encoding.
+    parts = urlsplit(url)
+    safe_path = quote(unquote(parts.path), safe="/")
+    safe_query = quote(unquote(parts.query), safe="=&")
+    safe_url = urlunsplit((parts.scheme, parts.netloc, safe_path, safe_query, parts.fragment))
+    req = urllib.request.Request(safe_url, headers={"User-Agent": "rss-gen/1.0"})
     with urllib.request.urlopen(req) as r:
         return r.read().decode("utf-8", errors="replace")
 
