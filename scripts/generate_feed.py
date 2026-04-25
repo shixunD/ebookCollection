@@ -2,7 +2,7 @@ import json
 import os
 import re
 import urllib.request
-from urllib.parse import parse_qsl, quote, unquote, urlencode, urlsplit, urlunsplit
+from urllib.parse import quote, urlsplit, urlunsplit
 from datetime import datetime, timezone
 from email.utils import format_datetime
 
@@ -26,8 +26,8 @@ def fetch_json(url):
 def fetch_text(url):
     # Normalize URLs to handle spaces/Unicode safely while avoiding double-encoding.
     parts = urlsplit(url)
-    safe_path = quote(unquote(parts.path), safe="/")
-    safe_query = urlencode(parse_qsl(parts.query, keep_blank_values=True))
+    safe_path = quote(parts.path, safe="/%")
+    safe_query = quote(parts.query, safe="=&%")
     safe_url = urlunsplit((parts.scheme, parts.netloc, safe_path, safe_query, parts.fragment))
     req = urllib.request.Request(safe_url, headers={"User-Agent": "rss-gen/1.0"})
     with urllib.request.urlopen(req) as r:
