@@ -23,22 +23,24 @@ def fetch_json(url):
 
 
 def fetch_text(url):
-    from urllib.parse import quote, urlsplit, urlunsplit
-    parts = urlsplit(url)
-    encoded_path = quote(parts.path, safe="/:@!$&'()*+,;=")
-    safe_url = urlunsplit((parts.scheme, parts.netloc, encoded_path, parts.query, parts.fragment))
-    req = urllib.request.Request(safe_url, headers={"User-Agent": "rss-gen/1.0"})
+    # Use the URL as-is from the GitHub API response (already properly encoded).
+    # Do NOT re-encode it — that causes double-encoding of percent signs and
+    # breaks requests for filenames that contain Unicode or special characters.
+    req = urllib.request.Request(url, headers={"User-Agent": "rss-gen/1.0"})
     with urllib.request.urlopen(req) as r:
         return r.read().decode("utf-8", errors="replace")
 
 
 def parse_filename(name):
+    # Strip .txt extension
     stem = name[:-4]
-    m = re.match(r"^(\d{4}-\d{2}-\d{2})-(.+)$", stem)
+    # Match date prefix: YYYY-MM-DD followed by optional space/dash separator
+    m = re.match(r"^(\d{4}-\d{2}-\d{2})[-\s]+(.+)$", stem)
     if not m:
         return None, stem, "", ""
     date_str = m.group(1)
-    rest = m.group(2)
+    rest = m.group(2).strip()
+    # Try "Author - Title" split (first " - " only)
     parts = rest.split(" - ", 1)
     if len(parts) == 2:
         author = parts[0].strip()
@@ -46,6 +48,7 @@ def parse_filename(name):
     else:
         author = ""
         title_part = rest.strip()
+    # Try "Title — Subtitle" split (em dash)
     if " — " in title_part:
         title, subtitle = title_part.split(" — ", 1)
     else:
@@ -98,6 +101,7 @@ def main():
         if not f["name"].endswith(".txt") or f.get("size", 0) == 0:
             continue
         date_str, author, title, subtitle = parse_filename(f["name"])
+        # Use the pre-encoded download_url from the API response directly
         content = fetch_text(f["download_url"])
         html_content = text_to_html(content)
         full_title = f"{author} – {title}" if author else title
