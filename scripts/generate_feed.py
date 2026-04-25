@@ -2,7 +2,7 @@ import json
 import os
 import re
 import urllib.request
-from urllib.parse import quote, unquote, urlsplit, urlunsplit
+from urllib.parse import quote, urlsplit, urlunsplit
 from datetime import datetime, timezone
 from email.utils import format_datetime
 
@@ -28,8 +28,8 @@ def fetch_text(url):
     parts = urlsplit(url)
     if parts.scheme != "https" or parts.netloc not in {"raw.githubusercontent.com", "github.com"}:
         raise ValueError(f"Unexpected download host: {parts.netloc}")
-    safe_path = quote(unquote(parts.path), safe="/")
-    safe_query = quote(unquote(parts.query), safe="=&:@/?")
+    safe_path = quote(parts.path, safe="/%")
+    safe_query = quote(parts.query, safe="=&%")
     safe_url = urlunsplit((parts.scheme, parts.netloc, safe_path, safe_query, parts.fragment))
     req = urllib.request.Request(safe_url, headers={"User-Agent": "rss-gen/1.0"})
     with urllib.request.urlopen(req) as r:
