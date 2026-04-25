@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from email.utils import format_datetime
@@ -22,9 +23,21 @@ def fetch_json(url):
         return json.loads(r.read())
 
 
+def encode_url(url):
+    """Percent-encode any unencoded characters in a URL while preserving
+    already-encoded sequences and the URL structure (scheme, host, path, query)."""
+    parsed = urllib.parse.urlsplit(url)
+    # quote path: encode everything except safe URL path characters and
+    # already-encoded percent signs so we don't double-encode.
+    encoded_path = urllib.parse.quote(parsed.path, safe="/:@!$&'()*+,;=-._~%")
+    return urllib.parse.urlunsplit((
+        parsed.scheme, parsed.netloc, encoded_path, parsed.query, parsed.fragment
+    ))
+
+
 def fetch_text(url):
-    # Use the URL as-is from the GitHub API response (already properly encoded).
-    req = urllib.request.Request(url, headers={"User-Agent": "rss-gen/1.0"})
+    safe_url = encode_url(url)
+    req = urllib.request.Request(safe_url, headers={"User-Agent": "rss-gen/1.0"})
     with urllib.request.urlopen(req) as r:
         return r.read().decode("utf-8", errors="replace")
 
@@ -33,19 +46,17 @@ def parse_filename(name):
     """
     Supported format: YYYY-MM-DD[-[ ]]Author, Book — Title [ — Subtitle]
     - Date separator: dash-only OR dash-space (both accepted).
-    - Any characters are tolerated in the body: colons, semicolons,
+    - Any characters tolerated in the body: colons, semicolons,
       quotes, parentheses, Chinese characters, etc.
     Returns (date_str, author, book_or_body, title)
     """
     stem = name[:-4]  # strip .txt
-    # Match date; allow optional space after the dash separator
     m = re.match(r"^(\d{4}-\d{2}-\d{2})-\s*(.+)$", stem)
     if not m:
         return None, stem, "", ""
     date_str = m.group(1)
     rest = m.group(2).strip()
 
-    # Split on first em dash (—) to separate "Author, Book" from "Title — Subtitle"
     parts = rest.split(" — ", 1)
     if len(parts) == 2:
         author_book = parts[0].strip()
@@ -58,7 +69,6 @@ def parse_filename(name):
             t, s = title.split(" — ", 1)
             title, subtitle = t.strip(), s.strip()
     else:
-        # No em dash: treat whole rest as title
         ab_parts = rest.split(", ", 1)
         author = ab_parts[0].strip() if len(ab_parts) == 2 else ""
         book = ab_parts[1].strip() if len(ab_parts) == 2 else rest
@@ -120,7 +130,6 @@ def main():
         content = fetch_text(f["download_url"])
         html_content = text_to_html(content)
 
-        # Build display title: "Author, Book — Title"
         if author and book:
             full_title = f"{author}, {book}"
         elif book:
