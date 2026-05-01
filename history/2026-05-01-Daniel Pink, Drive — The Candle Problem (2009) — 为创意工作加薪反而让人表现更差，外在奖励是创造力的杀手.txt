@@ -1,0 +1,46 @@
+The Candle Problem
+From: Daniel Pink, Drive (2009)
+
+In 1945, a German psychologist named Karl Duncker designed a deceptively simple puzzle. You are given a candle, a box of thumbtacks, and a book of matches. Your task: fix the candle to the wall so the wax won't drip on the floor. Most people fail — not because they aren't smart, but because the solution requires seeing the box not as a container for thumbtacks, but as a shelf. Tack the box to the wall, place the candle inside it. Done. The obstacle isn't intelligence. It's that the mind gets stuck in the obvious function of objects. Psychologists call this cognitive bias "functional fixedness."
+
+Sixty years later, Sam Glucksberg at Princeton gave this same puzzle to two groups. One group was offered cash rewards — the faster you solve it, the more you earn. The other group was told nothing, just to try. The group with the money incentive took, on average, three and a half minutes longer to solve the problem. The reward made them measurably worse.
+
+This is the opening move in Daniel Pink's argument in Drive, and it lands like a punch you don't see coming.
+
+---
+
+We have spent decades assuming that the basic logic of motivation is: more reward, more performance. It is so intuitive it feels like physics. Offer people a bonus and they work harder. Grade kids on their effort and they try more. The entire architecture of modern management — performance reviews, quarterly targets, commission structures, gold stars on homework — rests on this assumption.
+
+Pink's argument is not that rewards don't work. It's that they only work for one type of task, and we've applied them to the wrong type entirely.
+
+He draws a line between two kinds of work. Algorithmic tasks have a clear path to a clear answer: enter the data, follow the steps, produce the output. For these, external incentives work exactly as expected. Pay a warehouse worker more per box packed, and you'll get more boxes packed. The reward sharpens focus on execution. But heuristic tasks — the kind that require novel thinking, creative reframing, or making unexpected connections — run on completely different fuel. When you introduce an if-then reward into heuristic work, you inadvertently narrow attention. The brain locks onto the prize and stops being curious. It starts being strategic instead of exploratory. And strategy, in the face of a problem that requires genuine insight, is exactly the wrong mode.
+
+Edward Deci and Richard Ryan at the University of Rochester have spent four decades documenting what they call the overjustification effect: when you start rewarding people externally for an activity they already find intrinsically interesting, you can reduce their enjoyment of it. The reward doesn't add to the internal drive — it quietly replaces it.
+
+---
+
+Here's why this matters beyond puzzle experiments. The modern economy has largely automated or offshored the algorithmic work. What remains — what employers actually need from knowledge workers, designers, educators, researchers, leaders — is almost entirely heuristic. The world is paying for creativity, judgment, and novel problem-solving. And we're still trying to unlock those capabilities with the same tools that worked in a factory in 1955.
+
+We are running an electric engine on gasoline and wondering why it sputters.
+
+Pink points to a different set of motivators for heuristic work: autonomy (the ability to self-direct your time, task, and technique), mastery (the drive to improve at something that genuinely matters to you), and purpose (the sense that your work connects to something beyond a paycheck). These aren't philosophical comforts. They're operating conditions.
+
+The data is almost embarrassing in its clarity. Atlassian, the Australian software company, began giving engineers one day per quarter to work on absolutely anything they wanted — no goals, no check-ins, no deliverables. Out of these unstructured 'ShipIt' days came some of the company's most widely used product features. Google's famous 20% time policy, which gave engineers one-fifth of their week to self-direct, produced Gmail and Google News. 3M's equivalent policy, decades earlier, produced the Post-it Note.
+
+You don't generate insight by squeezing harder. You generate it by releasing grip.
+
+---
+
+None of this is an argument against compensation. Pink is careful here. The first step is to pay people enough that money stops being a source of anxiety or resentment — what he calls 'a baseline of fairness.' Once you've cleared that threshold, continuing to add financial incentives doesn't amplify performance. It just redirects attention away from the work and toward the reward.
+
+The more honest question for anyone managing people — or managing themselves — is: what type of work is this, actually? If it's algorithmic, incentivize away. If it's heuristic, stop trying to bribe your brain into brilliance. Create the conditions — autonomy, room to experiment, connection to meaning — and then get out of the way.
+
+The candle puzzle has one correct answer. Most of the problems worth solving don't.
+
+---
+
+Today's action: Pick one creative task you've been stalling on. Remove any performance pressure attached to it (deadlines, judgment, output goals) for just 30 minutes. Treat it as play. Notice what happens to your thinking.
+
+Takeaway: External rewards sharpen execution but narrow exploration — the exact opposite of what creative work requires. For heuristic tasks, autonomy, mastery, and purpose outperform any bonus structure.
+
+Extension: Morgan Housel in The Art of Spending Money makes a similar observation about financial goals — when money becomes the scoreboard, you stop asking whether the game itself is worth playing.

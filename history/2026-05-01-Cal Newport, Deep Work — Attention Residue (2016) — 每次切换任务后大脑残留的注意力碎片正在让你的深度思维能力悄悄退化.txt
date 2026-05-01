@@ -1,0 +1,52 @@
+Attention Residue
+From: Cal Newport, Deep Work (2016)
+
+Sophie Leroy, a business professor at the University of Washington, ran a study with a straightforward design. Participants worked on a task. Then they were interrupted and told to switch to a new one. Leroy didn't just measure performance on the second task. She measured what was happening in the brain during it. What she found was that even after people had physically moved on — new screen in front of them, new problem to solve — a measurable portion of their cognitive resources were still processing the previous task. Still chewing on it. Still mentally parked at the last open loop.
+
+She called this 'attention residue.'
+
+What it means in practice: when you switch tasks, you never fully arrive at the new one. You bring ghosts from the last one with you.
+
+---
+
+Cal Newport builds the spine of Deep Work on findings like this. His central claim is that the capacity to perform deep, focused, cognitively demanding work is becoming both rarer and more valuable — and that the modern workplace has been structurally redesigned to make it nearly impossible.
+
+The problem isn't that people get distracted sometimes. The problem is that distraction leaves residue. Every email check, every Slack notification, every quick tab-switch to 'just see' what's happening — each one creates an open cognitive loop. The human brain, as any student of the Zeigarnik effect knows, is compelled to return to unfinished things. It doesn't politely set them aside. It keeps circling back, quietly, in the background, even while you're ostensibly focused on something else. The cumulative effect is that you are never quite fully present at any one task.
+
+Research Newport cites suggests that after a single meaningful interruption, it can take anywhere from 10 to 23 minutes to fully restore deep focus. In the average open-plan office, interruptions occur every 3 minutes.
+
+We have architected a work environment that makes sustained deep thought essentially impossible. And then we wonder why we feel cognitively depleted by 2pm.
+
+---
+
+The more unsettling part of Newport's argument isn't about productivity. It's about what constant shallow stimulation does to the baseline.
+
+The human brain adapts to its environment. Neural pathways that are repeatedly exercised become stronger. Ones that are repeatedly bypassed weaken. Decades of research in neuroplasticity confirm this. What Newport argues — drawing on work by neuroscientists including Daniel Levitin — is that when we habitually operate in fragmented attention mode, the brain adapts to fragmentation as its default state. It becomes less capable of tolerating the discomfort of sustained focus. People begin to reach for their phones within seconds of sitting still. They find long-form reading difficult. They can't sit with a problem long enough to let genuine insight emerge, because the habit of seeking immediate stimulation has eroded the neural infrastructure for patience.
+
+This isn't weakness. It's adaptation. The brain did exactly what it was trained to do.
+
+Newport draws an analogy to physical fitness that is hard to argue with. If you never ask your muscles to lift heavy weight, they lose the capacity to do so. Not because something went wrong — because that's how the body works. The capacity for deep cognitive focus operates identically. It is a skill, not a fixed trait. And like any skill, it requires deliberate practice to develop and consistent use to maintain.
+
+---
+
+The solution Newport proposes runs directly against the grain of modern productivity culture: do less, but with greater depth. Schedule protected blocks of time — hours, not minutes — for the work that actually matters. Treat these blocks as non-negotiable. Batch your shallow work (email, messages, administrative tasks) into defined windows rather than letting it bleed continuously through your day. Make the default position focus, not availability.
+
+He also advocates for what might be called attention training: small, deliberate practices that rebuild the capacity for depth. Taking a walk without your phone. Reading a book chapter without tabs open in the background. Sitting with a difficult problem for five minutes before reaching for Google. The goal isn't technological asceticism. It's deliberate exercise of the cognitive muscle that matters most.
+
+There's a clarifying reframe Newport offers: the people producing the most meaningful work in any field are rarely the most accessible. The writer who answers every message within minutes isn't writing anything important. The researcher who is always available for a quick call isn't doing deep research. This isn't about being difficult. It's about understanding what depth actually costs — and what shallowness silently destroys.
+
+---
+
+What makes this argument worth sitting with is the institutional dimension. Individual willpower isn't the problem. The structure is. Open-plan offices, always-on communication norms, the social pressure to respond quickly — these aren't neutral features of a modern workplace. They are design choices, made mostly without reflection, that systematically prioritize responsiveness over substance. As Newport puts it: 'Busyness as a proxy for productivity' has become the default operating assumption. We fill our days with visible activity because depth is invisible and slow, and visibility feels like proof.
+
+But proof of what, exactly.
+
+The deepest thinking you'll ever do won't look busy. It'll look like staring at a wall. And the only way to do it is to protect the time and attention required, deliberately, against a world that will not stop asking for both.
+
+---
+
+Today's action: Identify the one task this week that requires your deepest thinking. Schedule a 90-minute block — no phone, no tabs, no messages — and do only that. Treat it as a meeting you can't cancel.
+
+Takeaway: Every task-switch leaves attention residue. Protecting one long, uninterrupted block of deep work per day isn't a luxury habit — it's the difference between thinking and performing busyness.
+
+Extension: Adam Grant in Hidden Potential makes a related point — the learning environments that feel most comfortable (familiar, low-friction, stimulating) are often the ones producing the least actual growth. Discomfort and depth are siblings.
