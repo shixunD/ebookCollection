@@ -1,0 +1,41 @@
+2026-05-08 | Seed E
+Source: Daniel Pink, To Sell Is Human (2012)
+Title: The Irritation vs Buoyancy Divide — You Are Already Selling. The Question Is Whether You Are Any Good At It.
+
+---
+
+The Irritation vs Buoyancy Divide — You Are Already Selling. The Question Is Whether You Are Any Good At It.
+
+In 2012, Daniel Pink asked over 7,000 people to track their work activities in minute-by-minute detail. The question he was investigating seemed almost too simple: how much of your workday involves trying to get other people to do something?
+
+The answer stopped him cold.
+
+On average, people reported spending 41 percent of their working time in what Pink calls "non-sales selling" — persuading, convincing, cajoling, and influencing others in ways that do not involve any financial transaction. Teachers persuading students to engage with difficult material. Doctors convincing patients to follow treatment plans. Engineers persuading managers to approve a design change. Executives coaxing resistant boards to embrace a new strategy. Parents negotiating with teenagers about homework. None of these people would describe themselves as salespeople. But 41 percent of their professional lives consists of exactly that activity: moving other people.
+
+And yet almost none of them have ever been taught how to do it well.
+
+This is the central provocation of Pink's book, and it is a sharper provocation than it first appears. We have inherited a deeply negative cultural script about selling. The word salesperson triggers an image: the pushy car dealer, the manipulative telemarketer, the slick closer who treats every human interaction as a transaction to be won. The stereotype is so powerful that most professionals would rather describe almost anything else they do than admit to selling. But Pink's research reveals that this discomfort has a cost. Because if you are doing it for 41 percent of your day whether you admit it or not, and you are doing it badly because you have convinced yourself it is beneath you, the people you are trying to move — your students, your colleagues, your patients, your direct reports — are the ones who pay.
+
+Pink traces the cultural vilification of sales to a specific historical moment. For most of human history, selling and buying were roughly symmetrical activities. The seller knew what he had; the buyer could inspect it. The information was more or less balanced. But the industrial revolution, and particularly the rise of mass manufacturing and national distribution, created a new asymmetry: sellers suddenly knew vastly more about their products than buyers did. This information gap was the swamp in which the manipulative salesperson archetype was born. Caveat emptor — let the buyer beware — became necessary precisely because the seller had structural advantages that made exploitation easy.
+
+Here is what Pink argues has fundamentally changed: the internet has collapsed that information asymmetry. A buyer researching a car in 2012 could access the dealer's invoice price, the reliability data, the owner forum complaints, the competing dealership's price, and dozens of independent reviews before setting foot in a showroom. The seller's structural advantage — knowing more than the buyer — had evaporated. This means the old model of selling, built on information control and pressure tactics, does not just feel bad. It no longer works. And yet most of the cultural assumptions we carry about what it means to "sell" are still built on the old model.
+
+What works now, Pink argues, is something closer to the opposite. He draws a distinction between two psychological orientations toward the experience of trying to influence someone. The first he calls "irritation" — the adversarial stance, the closer mentality, the pressure-and-overcome-objections approach that treats the other person as an obstacle between you and your goal. The second he calls "buoyancy" — a stance grounded in genuine curiosity about the other person's situation, honest acknowledgment of the limits of what you are offering, and a willingness to walk away when what you have is not actually right for them.
+
+The counterintuitive finding — backed by behavioral science research from Adam Grant, Robert Cialdini, and others — is that buoyancy consistently outperforms irritation. Not just ethically. Empirically. People who approach influence with genuine curiosity and honesty are more persuasive, not less, because they build something that pressure tactics never can: trust. And in a world where buyers and students and patients and employees have more information and more options than ever before, trust has become the scarcest and most valuable currency in any influence relationship.
+
+Pink also challenges one of the most entrenched assumptions about what makes a good influencer: the idea that extroversion is the key trait. The stereotype of the great salesperson is someone who talks easily, commands rooms, and fills silence with energy. But research by Grant at Wharton found that extroverts are not, on average, better at persuasion than introverts. The people who are consistently best at moving others turn out to be ambiverts — people who can listen deeply and speak compellingly, who know when to push and when to pull back, who do not dominate conversations but do not disappear from them either. The quality that matters most is attunement: the ability to step genuinely into another person's perspective and see the world from where they are standing.
+
+This reframing has profound implications for education specifically. A teacher who thinks of their job as curriculum delivery has a fundamentally different relationship with their students than a teacher who thinks of their job as moving people — from where they are to where they could be, from confusion to clarity, from disengagement to genuine curiosity. The second framing is harder and more demanding. But it is also far more honest about what teaching actually is. Every great teacher is, at their core, a person who has learned to move other people effectively. The question is whether we train them that way.
+
+Pink's most practically useful framework is what he calls the "five frames of listening" — the idea that when someone resists being moved, it is almost never because they are irrational or obstinate. It is because the argument being made has not yet connected to what they actually care about. The job of the person trying to move them is not to push harder on the same point. It is to get quiet, listen more carefully, and find the frame through which their perspective and your proposal genuinely overlap.
+
+You are already selling, every single day. The only variable is whether you are doing it in a way that respects the person you are trying to move — or in a way that, eventually, makes them not want to be moved by you at all.
+
+---
+
+Today's action: Think of one person you are currently trying to influence — a student, a colleague, a family member — who seems resistant. Instead of pushing harder on your existing argument, write down two questions you could ask them this week that would genuinely help you understand what they actually care about. Then ask one of them.
+
+📌 Takeaway: 41 percent of your working day is already spent trying to move other people. The old model of selling — information asymmetry plus pressure — is dead. What works now is buoyancy over irritation, attunement over assertion, and genuine curiosity over the drive to close. You are not above selling. You are just doing it without thinking — and that is the most expensive way to do anything.
+
+💡 Extension: Adam Grant in Give and Take (2013) has a directly related finding — that "givers" (people who approach interactions asking what they can contribute rather than what they can extract) outperform "takers" and "matchers" in the long run across almost every profession. Pink's buoyancy framework and Grant's giver research describe the same underlying truth from two different angles: generosity of attention and honesty of intent are not soft virtues. They are hard competitive advantages.
