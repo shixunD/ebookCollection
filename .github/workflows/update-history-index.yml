@@ -1,0 +1,38 @@
+name: Update History Index
+
+on:
+  push:
+    paths:
+      - 'history/**'
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate historyALL.txt
+        run: |
+          cd history
+          # 列出所有 .txt 文件（排除 historyALL.txt 本身），按文件名排序
+          ls *.txt 2>/dev/null | grep -v '^historyALL\.txt$' | sort > historyALL.txt
+          echo "Generated historyALL.txt with $(wc -l < historyALL.txt) entries"
+          cat historyALL.txt
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add history/historyALL.txt
+          if git diff --staged --quiet; then
+            echo "No changes to historyALL.txt, skipping commit."
+          else
+            git commit -m "chore: update historyALL.txt index [skip ci]"
+            git push
+          fi
