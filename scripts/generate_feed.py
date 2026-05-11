@@ -24,10 +24,15 @@ def fetch_json(url):
 
 
 def encode_url(url):
-    """Percent-encode any unencoded characters in a URL while preserving
-    already-encoded sequences and the URL structure (scheme, host, path, query)."""
+    """Safely encode a URL that may be partially encoded or fully raw.
+    Strategy: unquote the path first (normalize to plain Unicode),
+    then re-encode cleanly. This correctly handles literal % characters
+    in filenames (e.g. '40%的') by encoding them as %25, avoiding
+    malformed URLs like '40%%E7...' that cause urlopen to crash.
+    """
     parsed = urllib.parse.urlsplit(url)
-    encoded_path = urllib.parse.quote(parsed.path, safe="/:@!$&'()*+,;=-._~%")
+    decoded_path = urllib.parse.unquote(parsed.path)
+    encoded_path = urllib.parse.quote(decoded_path, safe="/:@!$&'()*+,;=-._~")
     return urllib.parse.urlunsplit((
         parsed.scheme, parsed.netloc, encoded_path, parsed.query, parsed.fragment
     ))
@@ -123,6 +128,8 @@ def main():
     items = []
     for f in files:
         if not f["name"].endswith(".txt") or f.get("size", 0) == 0:
+            continue
+        if f["name"] == "historyALL.txt":
             continue
         date_str, author, book, title = parse_filename(f["name"])
         content = fetch_text(f["download_url"])
