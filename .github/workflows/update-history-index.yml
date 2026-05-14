@@ -20,8 +20,8 @@ jobs:
       - name: Generate historyALL.txt
         run: |
           cd history
-          # 列出所有 .txt 文件（排除 historyALL.txt 本身），按文件名排序
-          ls *.txt 2>/dev/null | grep -v '^historyALL\.txt$' | sort > historyALL.txt
+          # 列出所有 .txt 文件（排除 historyALL.txt 本身），按文件名倒序排列（新的在前）
+          ls *.txt 2>/dev/null | grep -v '^historyALL\.txt$' | sort -r > historyALL.txt
           echo "Generated historyALL.txt with $(wc -l < historyALL.txt) entries"
           cat historyALL.txt
 
