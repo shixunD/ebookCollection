@@ -47,37 +47,14 @@ def fetch_text(url):
 
 def parse_filename(name):
     """
-    Supported format: YYYY-MM-DD[-[ ]]Author, Book — Title [ — Subtitle]
-    - Date separator: dash-only OR dash-space (both accepted).
-    - Any characters tolerated in the body: colons, semicolons,
-      quotes, parentheses, Chinese characters, etc.
-    Returns (date_str, author, book_or_body, title)
+    Extract date_str from filename for pubDate sorting.
+    Supported format: YYYY-MM-DD[-[ ]]...
     """
     stem = name[:-4]  # strip .txt
     m = re.match(r"^(\d{4}-\d{2}-\d{2})-\s*(.+)$", stem)
     if not m:
-        return None, stem, "", ""
-    date_str = m.group(1)
-    rest = m.group(2).strip()
-
-    parts = rest.split(" — ", 1)
-    if len(parts) == 2:
-        author_book = parts[0].strip()
-        ab_parts = author_book.split(", ", 1)
-        author = ab_parts[0].strip() if len(ab_parts) == 2 else ""
-        book = ab_parts[1].strip() if len(ab_parts) == 2 else author_book
-        title = parts[1].strip()
-        subtitle = ""
-        if " — " in title:
-            t, s = title.split(" — ", 1)
-            title, subtitle = t.strip(), s.strip()
-    else:
-        ab_parts = rest.split(", ", 1)
-        author = ab_parts[0].strip() if len(ab_parts) == 2 else ""
-        book = ab_parts[1].strip() if len(ab_parts) == 2 else rest
-        title, subtitle = "", ""
-
-    return date_str, author, book, title
+        return None
+    return m.group(1)
 
 
 def date_to_rfc822(date_str):
@@ -131,34 +108,24 @@ def main():
             continue
         if f["name"] == "historyALL.txt":
             continue
-        date_str, author, book, title = parse_filename(f["name"])
+
+        # Use the full filename (minus .txt) directly as the RSS title
+        full_title = f["name"][:-4]
+
+        # Extract date for pubDate sorting only
+        date_str = parse_filename(f["name"]) or "2000-01-01"
+
         content = fetch_text(f["download_url"])
         html_content = text_to_html(content)
-
-        # Build the body part of the title (without date)
-        if author and book:
-            body_title = f"{author}, {book}"
-        elif book:
-            body_title = book
-        else:
-            body_title = f["name"][:-4]  # fallback: full stem
-        if title:
-            body_title += f" — {title}"
-
-        # Prepend date so the full filename (minus .txt) is preserved as title
-        if date_str:
-            full_title = f"{date_str}-{body_title}"
-        else:
-            full_title = body_title
 
         guid = f["html_url"]
         items.append({
             "title": full_title,
             "link": guid,
             "guid": guid,
-            "pubDate": date_to_rfc822(date_str or "2000-01-01"),
+            "pubDate": date_to_rfc822(date_str),
             "description": html_content,
-            "date_str": date_str or "0000-00-00",
+            "date_str": date_str,
         })
 
     items.sort(key=lambda x: x["date_str"], reverse=True)
