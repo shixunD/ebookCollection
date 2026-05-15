@@ -1,49 +1,50 @@
-1.txt
-2026-04-23-Arthur C. Brooks, 3 Ways to Want Less and Be Happier — The real trap is not failing to get what we want, it is training ourselves to always want the next thing.txt
-2026-04-23-Brene Brown, On Vulnerability in Leadership — Strong leaders do not earn trust by acting invulnerable, they earn it by staying honest under uncertainty.txt
-2026-04-24- Csikszentmihalyi, Flow — We Spend Our Lives Escaping Work, Yet Data Shows Work Is Where We Are Most Alive — 我们花一生渴望逃离工作，却不知道工作时我们其实更快乐.txt
-2026-04-24-Adam Grant, No You Do Not Get an A for Effort.txt
-2026-04-24-Adam Grant, Originals — 适度拖延不是懒惰，而是创造力的孵化器.txt
-2026-04-24-Arthur Brooks, From Strength to Strength — The Psychoprofessional Gravitation Paradox.txt
-2026-04-24-Arthur C. Brooks, From Strength to Strength — I Dont Want to Be Happy I Want to Be Great — 成功上瘾者的心理引力陷阱.txt
-2026-04-24-Brene Brown, Daring Greatly — 脆弱悖论：我们渴望看到别人的真实，却极力掩饰自己的脆弱.txt
-2026-04-24-Morgan Housel, The Art of Spending Money — Independence as the Highest ROI.txt
-2026-04-24-Robert Waldinger, Harvard Study — Relationship Quality at 50 Predicts Health at 80 — 50岁关系质量比胆固醇更能预测80岁健康.txt
-2026-04-24-The Art of Spending Money — Morgan Housel — 钱的最高回报率不是财富也不是地位，而是几乎没人真正去买的东西：independence（自主权）.txt
-2026-04-25- Morgan Housel, Same as Ever — Casualties of Perfection — 进化用38亿年证明不完美才是最优策略，但我们仍然把所有冗余和低效当作敌人消灭.txt
-2026-04-25- Paul Bloom, Against Empathy (2016) — The Warmest Impulse Is the Worst Compass — 感同身受是我们最被高估的道德能力.txt
-2026-04-25- Sahil Bloom, The 5 Types of Wealth — The Finite Visits Math — 如果你父母60岁、你每年见他们两次，你这辈子和他们在一起的次数可能只剩40次.txt
-2026-04-25-Barry Schwartz, The Paradox of Choice — More Is Less — 选择越多你越痛苦，而这不是你的错.txt
-2026-04-25-Kahneman, Peak-End Rule — You Are Not Living Your Life, You Are Editing It — 我们不是在过生活，而是在为记忆剪辑素材.txt
-2026-04-25-Ryan Holiday, Ego Is the Enemy — Self-Awareness Is the Enemy of All Great Things.txt
-2026-04-25-Seth Godin, The Dip — When to Quit and When to Stick — Most People Quit Good Dips and Persist Through Dead-End Cul-de-Sacs.txt
-2026-04-25-Viktor Frankl, Mans Search for Meaning — The Last Freedom Nobody Talks About — 你无法选择发生什么，但你永远可以选择赋予它什么意义.txt
-2026-04-26-Arthur C. Brooks, Love Your Enemies — The Gift Your Enemy Doesn't Know They're Giving.txt
-2026-04-26-Walter Sinnott-Armstrong, Think Again — The Luxury of Being Wrong.txt
-2026-04-27-Adam Grant, Hidden Potential — 你最喜欢的学习方式，很可能正是阻止你成长的那个方式.txt
-2026-04-27-Arthur C. Brooks and Oprah Winfrey, Build the Life You Want — 你花了多少时间被人看，而不是去看这个世界.txt
-2026-04-27-Kristin Neff, Self-Compassion — The Fierce Friend You Were Never Taught to Be to Yourself (2011) — 你对别人温柔对自己残忍不是美德，是在损耗你的表现.txt
-2026-04-27-Lisa Feldman Barrett, How Emotions Are Made — Your Brain Does Not Detect Feelings, It Invents Them (2017) — 你以为你在感受情绪，其实大脑在捏造情绪.txt
-2026-04-28-Arthur C. Brooks, The Happiness Files — The CV of Failure — 最重要的简历其实是失败清单.txt
-2026-04-28-Walter Sinnott-Armstrong, Think Again — Changing Your Mind Wins — 被说服的人才是真赢家.txt
-2026-04-29-Arthur C. Brooks and Oprah Winfrey, Build the Life You Want — Happiness Is Not the Opposite of Unhappiness (2023) — 幸福与痛苦不是跷跷板两端你可以同时拥有两者.txt
-2026-04-29-Sahil Bloom, The 5 Types of Wealth — The Pyrrhic Victory Trap (2024) — 赢了每一场财务战役却输掉了整场人生之战.txt
-2026-05-01-Cal Newport, Deep Work — Attention Residue (2016) — 每次切换任务后大脑残留的注意力碎片正在让你的深度思维能力悄悄退化.txt
-2026-05-01-Daniel Pink, Drive — The Candle Problem (2009) — 为创意工作加薪反而让人表现更差，外在奖励是创造力的杀手.txt
-2026-05-03-Arthur C. Brooks, From Strength to Strength — Deal Friends vs Real Friends — 你以为自己有很多朋友，但大多数只是互相有用的同事.txt
-2026-05-03-Morgan Housel, The Art of Spending Money — Social Debt — 你花钱买的不是东西，而是别人对你的印象，而那笔债永远还不清.txt
-2026-05-04-David Epstein, Range — The Winding Path Wins (2019) — 越早专精不一定越厉害，人生弯路才是深层竞争力.txt
-2026-05-04-Martin Seligman, Learned Helplessness — The Cage That Isn't There (1967) — 你以为是你缺乏动力，其实大脑已经提前学会了放弃.txt
-2026-05-04-Sahil Bloom, The 5 Types of Wealth — The Pyrrhic Victory Trap (2024) — 赢了每一场财务战役却输掉了整场人生之战.txt
-2026-05-05-Arthur C. Brooks, The Happiness Files — Your Worry Is Not the Problem, Your Relationship with Worry Is (2024) — 让你痛苦的不是担忧本身，而是你把担忧当成了必须解决的问题.txt
-2026-05-07-Gabriele Oettingen, Rethinking Positive Thinking (2014) — The Positive Thinking Trap — 越是幻想成功你反而越不可能成功因为大脑会把想象当现实提前庆祝.txt
-2026-05-07-Tomas Chamorro-Premuzic, Why Do So Many Incompetent Men Become Leaders — The Confidence Trap — 自信不是能力的原因而是结果但我们的社会奖励表演自信而惩罚真正的能力.txt
-2026-05-08-Cal Newport, Slow Productivity (2024) — The Overhead Spiral — 你越忙越烂不是你的错而是伪生产力文化设计的必然结果.txt
-2026-05-08-Daniel Pink, To Sell Is Human (2012) — The Irritation vs Buoyancy Divide — 你以为你不是销售但你每天40%的时间都在推动别人改变想法.txt
-2026-05-10-Daniel Pink, The Power of Regret — The Boldness Regret (2022) — 研究发现我们最深的遗憾不是做错了什么，而是没敢去做的那些事.txt
-2026-05-11-Ethan Kross, Chatter — The Bully in Your Head Is Not Your Conscience (2021) — 你脑子里那个声音不是你的良知而是一个你从未打算雇用的苛刻批评员.txt
-2026-05-11-Naval Ravikant, The Almanack of Naval Ravikant — Specific Knowledge Is the Career You Cannot Be Replaced At (2020) — 在AI时代真正的护城河不是努力而是做那个无法被复制的你自己.txt
-2026-05-12-Arthur C. Brooks, The Happiness Files - The Timing of Quitting (2024) - 什么时候离开比你是否努力更重要.txt
-2026-05-12-Susan Cain, Bittersweet - The Longing Signal (2022) - 你那说不清的忧郁，可能是灵魂在给你发信号.txt
-2026-05-14-Csikszentmihalyi, Flow — The Paradox of Flow in Education (1990) — 为什么最能激发学生内在动力的课堂，往往是老师感觉失控的那种.txt
+2026-05-15-Brene Brown, Atlas of the Heart - Confusion Is the Gateway (2021) - 大脑最厌恶困惑，而这正是问题所在.txt
 2026-05-14-Daniel Pink, When — The Trough Is Not Laziness (2018) — 每天下午你的认知能力可能相当于喝醉了.txt
+2026-05-14-Csikszentmihalyi, Flow — The Paradox of Flow in Education (1990) — 为什么最能激发学生内在动力的课堂，往往是老师感觉失控的那种.txt
+2026-05-12-Susan Cain, Bittersweet - The Longing Signal (2022) - 你那说不清的忧郁，可能是灵魂在给你发信号.txt
+2026-05-12-Arthur C. Brooks, The Happiness Files - The Timing of Quitting (2024) - 什么时候离开比你是否努力更重要.txt
+2026-05-11-Naval Ravikant, The Almanack of Naval Ravikant — Specific Knowledge Is the Career You Cannot Be Replaced At (2020) — 在AI时代真正的护城河不是努力而是做那个无法被复制的你自己.txt
+2026-05-11-Ethan Kross, Chatter — The Bully in Your Head Is Not Your Conscience (2021) — 你脑子里那个声音不是你的良知而是一个你从未打算雇用的苛刻批评员.txt
+2026-05-10-Daniel Pink, The Power of Regret — The Boldness Regret (2022) — 研究发现我们最深的遗憾不是做错了什么，而是没敢去做的那些事.txt
+2026-05-08-Daniel Pink, To Sell Is Human (2012) — The Irritation vs Buoyancy Divide — 你以为你不是销售但你每天40%的时间都在推动别人改变想法.txt
+2026-05-08-Cal Newport, Slow Productivity (2024) — The Overhead Spiral — 你越忙越烂不是你的错而是伪生产力文化设计的必然结果.txt
+2026-05-07-Tomas Chamorro-Premuzic, Why Do So Many Incompetent Men Become Leaders — The Confidence Trap — 自信不是能力的原因而是结果但我们的社会奖励表演自信而惩罚真正的能力.txt
+2026-05-07-Gabriele Oettingen, Rethinking Positive Thinking (2014) — The Positive Thinking Trap — 越是幻想成功你反而越不可能成功因为大脑会把想象当现实提前庆祝.txt
+2026-05-05-Arthur C. Brooks, The Happiness Files — Your Worry Is Not the Problem, Your Relationship with Worry Is (2024) — 让你痛苦的不是担忧本身，而是你把担忧当成了必须解决的问题.txt
+2026-05-04-Sahil Bloom, The 5 Types of Wealth — The Pyrrhic Victory Trap (2024) — 赢了每一场财务战役却输掉了整场人生之战.txt
+2026-05-04-Martin Seligman, Learned Helplessness — The Cage That Isn't There (1967) — 你以为是你缺乏动力，其实大脑已经提前学会了放弃.txt
+2026-05-04-David Epstein, Range — The Winding Path Wins (2019) — 越早专精不一定越厉害，人生弯路才是深层竞争力.txt
+2026-05-03-Morgan Housel, The Art of Spending Money — Social Debt — 你花钱买的不是东西，而是别人对你的印象，而那笔债永远还不清.txt
+2026-05-03-Arthur C. Brooks, From Strength to Strength — Deal Friends vs Real Friends — 你以为自己有很多朋友，但大多数只是互相有用的同事.txt
+2026-05-01-Daniel Pink, Drive — The Candle Problem (2009) — 为创意工作加薪反而让人表现更差，外在奖励是创造力的杀手.txt
+2026-05-01-Cal Newport, Deep Work — Attention Residue (2016) — 每次切换任务后大脑残留的注意力碎片正在让你的深度思维能力悄悄退化.txt
+2026-04-29-Sahil Bloom, The 5 Types of Wealth — The Pyrrhic Victory Trap (2024) — 赢了每一场财务战役却输掉了整场人生之战.txt
+2026-04-29-Arthur C. Brooks and Oprah Winfrey, Build the Life You Want — Happiness Is Not the Opposite of Unhappiness (2023) — 幸福与痛苦不是跷跷板两端你可以同时拥有两者.txt
+2026-04-28-Walter Sinnott-Armstrong, Think Again — Changing Your Mind Wins — 被说服的人才是真赢家.txt
+2026-04-28-Arthur C. Brooks, The Happiness Files — The CV of Failure — 最重要的简历其实是失败清单.txt
+2026-04-27-Lisa Feldman Barrett, How Emotions Are Made — Your Brain Does Not Detect Feelings, It Invents Them (2017) — 你以为你在感受情绪，其实大脑在捏造情绪.txt
+2026-04-27-Kristin Neff, Self-Compassion — The Fierce Friend You Were Never Taught to Be to Yourself (2011) — 你对别人温柔对自己残忍不是美德，是在损耗你的表现.txt
+2026-04-27-Arthur C. Brooks and Oprah Winfrey, Build the Life You Want — 你花了多少时间被人看，而不是去看这个世界.txt
+2026-04-27-Adam Grant, Hidden Potential — 你最喜欢的学习方式，很可能正是阻止你成长的那个方式.txt
+2026-04-26-Walter Sinnott-Armstrong, Think Again — The Luxury of Being Wrong.txt
+2026-04-26-Arthur C. Brooks, Love Your Enemies — The Gift Your Enemy Doesn't Know They're Giving.txt
+2026-04-25-Viktor Frankl, Mans Search for Meaning — The Last Freedom Nobody Talks About — 你无法选择发生什么，但你永远可以选择赋予它什么意义.txt
+2026-04-25-Seth Godin, The Dip — When to Quit and When to Stick — Most People Quit Good Dips and Persist Through Dead-End Cul-de-Sacs.txt
+2026-04-25-Ryan Holiday, Ego Is the Enemy — Self-Awareness Is the Enemy of All Great Things.txt
+2026-04-25-Kahneman, Peak-End Rule — You Are Not Living Your Life, You Are Editing It — 我们不是在过生活，而是在为记忆剪辑素材.txt
+2026-04-25-Barry Schwartz, The Paradox of Choice — More Is Less — 选择越多你越痛苦，而这不是你的错.txt
+2026-04-25- Sahil Bloom, The 5 Types of Wealth — The Finite Visits Math — 如果你父母60岁、你每年见他们两次，你这辈子和他们在一起的次数可能只剩40次.txt
+2026-04-25- Paul Bloom, Against Empathy (2016) — The Warmest Impulse Is the Worst Compass — 感同身受是我们最被高估的道德能力.txt
+2026-04-25- Morgan Housel, Same as Ever — Casualties of Perfection — 进化用38亿年证明不完美才是最优策略，但我们仍然把所有冗余和低效当作敌人消灭.txt
+2026-04-24-The Art of Spending Money — Morgan Housel — 钱的最高回报率不是财富也不是地位，而是几乎没人真正去买的东西：independence（自主权）.txt
+2026-04-24-Robert Waldinger, Harvard Study — Relationship Quality at 50 Predicts Health at 80 — 50岁关系质量比胆固醇更能预测80岁健康.txt
+2026-04-24-Morgan Housel, The Art of Spending Money — Independence as the Highest ROI.txt
+2026-04-24-Brene Brown, Daring Greatly — 脆弱悖论：我们渴望看到别人的真实，却极力掩饰自己的脆弱.txt
+2026-04-24-Arthur C. Brooks, From Strength to Strength — I Dont Want to Be Happy I Want to Be Great — 成功上瘾者的心理引力陷阱.txt
+2026-04-24-Arthur Brooks, From Strength to Strength — The Psychoprofessional Gravitation Paradox.txt
+2026-04-24-Adam Grant, Originals — 适度拖延不是懒惰，而是创造力的孵化器.txt
+2026-04-24-Adam Grant, No You Do Not Get an A for Effort.txt
+2026-04-24- Csikszentmihalyi, Flow — We Spend Our Lives Escaping Work, Yet Data Shows Work Is Where We Are Most Alive — 我们花一生渴望逃离工作，却不知道工作时我们其实更快乐.txt
+2026-04-23-Brene Brown, On Vulnerability in Leadership — Strong leaders do not earn trust by acting invulnerable, they earn it by staying honest under uncertainty.txt
+2026-04-23-Arthur C. Brooks, 3 Ways to Want Less and Be Happier — The real trap is not failing to get what we want, it is training ourselves to always want the next thing.txt
+1.txt
