@@ -1,0 +1,63 @@
+The Moment Before the Message
+Based on Robert Cialdini, Pre-Suasion (2016)
+
+Imagine you are about to make an important ask — to a colleague, a student, a potential partner, or even your own child. You have thought carefully about what you are going to say. You have the evidence, the framing, the tone. You are ready.
+
+Here is what Cialdini would tell you: the most important moment has already passed.
+
+In Influence, published in 1984, Robert Cialdini identified six principles of persuasion — reciprocity, commitment, social proof, authority, liking, scarcity — that became one of the most cited frameworks in social psychology and marketing. But after three more decades of research, Cialdini realized he had been looking at the problem slightly too late. The influence was not only in the message. It was in what happened immediately before the message.
+
+He called this pre-suasion (pre-suasion): the practice of directing attention to a concept or feeling in the moments before a request, in a way that shifts how the request is received — often without the person realizing it.
+
+
+Attention Is Not Neutral
+
+The foundational insight of Pre-Suasion is both simple and unsettling: what we are thinking about at the moment of a decision heavily shapes the decision itself, even when that thought has no logical connection to the decision.
+
+Cialdini draws on decades of priming research to show that attention is not a neutral spotlight. Whatever concept occupies our attention becomes temporarily elevated in our mental hierarchy — it feels more important, more relevant, more real. Psychologists call this the focusing effect (focusing effect): we tend to overweight whatever we happen to be focused on.
+
+In one experiment, researchers asked passersby to fill out a survey. One version began: Are you an adventurous person who likes to try new things? The other began: Are you a cautious person who carefully considers your options? Respondents who answered the first version were subsequently more likely to agree to unusual requests. The question had not given them any new information. It had simply activated a particular self-concept (self-concept) in the seconds before the request arrived. That activation did the work.
+
+This is not manipulation in the crude sense. It is something subtler and, in some ways, more profound: a recognition that every communication exists inside a context, and that context is itself a form of communication. The question is whether you are shaping that context intentionally or leaving it to chance.
+
+
+The Locked-In Attention Window
+
+What makes pre-suasion effective is the structure of human attention. We do not process incoming information in a neutral steady state. Instead, our attention operates in what researchers call privileged moments (privileged moments) — brief windows during which a particular concept or feeling is especially active and accessible. Whatever enters during that window gets processed through a different filter than information arriving before or after.
+
+Cialdini describes this as creating a temporary state of readiness. A single well-placed question, image, or phrase — asked or shown immediately before the key message — can make an audience more receptive, not by changing their values or beliefs, but by shifting which of their existing values or beliefs is most available at the moment of judgment.
+
+One study asked people whether they considered themselves helpful. Those who said yes were subsequently far more likely to volunteer for a time-consuming research project. The question had activated the helpful self-concept. And once activated, that concept sought expression in the very next social opportunity presented.
+
+Another experiment, focused on consumer behavior, found that displaying a background image of clouds on a furniture website led visitors to weight comfort more heavily when evaluating sofas. The clouds had primed softness and ease. Visitors were not aware of the connection. But the data showed it clearly.
+
+
+Why This Matters Beyond Marketing
+
+It is tempting to file this insight under persuasion tactics and move on. But the implications are considerably larger.
+
+For educators, pre-suasion suggests that the opening minutes of a class — before any content is taught — may be among the most powerful instructional moments. What question do you open with? What story, image, or scenario do you surface first? If a teacher opens a lesson on critical thinking by asking students to recall a time they were confidently wrong, they have activated something — humility, openness, curiosity — that will color how students receive what comes next. This is not just motivational framing. It is architectural.
+
+For leaders, it means that the context you create before a difficult conversation determines much of what is possible inside it. A manager who asks a team member how they would ideally want to be supported before offering feedback has already shifted the dynamic. A leader who opens a difficult meeting by acknowledging shared values before presenting a challenge has done something that no amount of carefully worded argument in the meeting itself could fully replicate.
+
+For anyone who communicates with the aim of changing minds — which is to say, for almost everyone — the research is a quiet challenge: stop thinking only about what you say, and start thinking about what you make salient (salient) in the moments before you say it.
+
+
+The Ethical Edge
+
+Cialdini is careful about this. He is not describing a technique for manipulation. He is describing a structural feature of how human attention works — and arguing that ethical communicators have a responsibility to use this knowledge transparently, not to exploit.
+
+The difference matters. Pre-suasion used cynically means manufacturing false readiness — activating a concept that has no genuine relationship to the decision at hand, simply to increase compliance. Pre-suasion used honestly means doing the work of genuinely connecting what you want to communicate to something your audience already cares about, and making sure that connection is active and alive at the moment it is most needed.
+
+A teacher who opens a lesson on financial literacy by asking students to imagine their future selves is not tricking them. They are helping students access a part of themselves that is genuinely relevant but might otherwise remain dormant during a dry lesson on compound interest. The connection is real. The activation is simply deliberate.
+
+That is the discipline Cialdini is pointing toward: not what you say, but what you illuminate first. Not the argument, but the soil in which the argument lands.
+
+In a world saturated with messages competing for attention, the communicators who shape what people are thinking about before the message arrives may have a quieter but more durable form of influence than those who only refine the message itself.
+
+
+Today's action: Before your next important conversation, ask yourself: what concept or feeling do I want the other person to have active in their mind when I make my key point? Design your opening — one question, one story, one image — to activate that state before you arrive at the substance.
+
+📌 Takeaway: The most important moment in any act of communication is not when you deliver your message — it is the moment just before, when you decide what to make the other person think about first.
+
+💡 Extension: Daniel Kahneman in Thinking, Fast and Slow offers a complementary view — the priming effects Cialdini describes operate primarily through System 1 thinking, the fast, associative, automatic mode that governs most of our real-time judgments without our awareness.
