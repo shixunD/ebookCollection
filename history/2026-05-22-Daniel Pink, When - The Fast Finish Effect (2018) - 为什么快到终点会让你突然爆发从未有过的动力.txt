@@ -1,0 +1,43 @@
+The Hidden Sprint You Never Knew You Had
+
+Here is a number that should bother you: 7,900.
+
+That is the approximate number of points scored in the final minute of the first half across ten NFL seasons, according to STATS LLC data analyzed by Daniel Pink in his book When. Now compare that to the roughly 3,200 points scored in the final minute of the second half — the minute when teams are supposedly fighting hardest to win the game outright. The minute before halftime, when no trophy is on the line and nothing is technically decided, produces more than twice the scoring of the minute that ends the whole game.
+
+Stop and sit with that. We are not rationally deploying our best effort when the stakes are highest. We are deploying it when a clock is about to hit zero — any clock.
+
+This is what researchers call the fast finish effect, and once you see it, you cannot unsee it.
+
+Clark Hull was an American psychologist who, in the early 1930s, built a long runway divided into equal sections and placed food at the end. Then he sent rats down the track and timed them. The result was almost embarrassingly simple: the closer the rats got to the food, the faster they ran. Hull called this the goal gradient hypothesis. The reward had not changed. The distance of each segment was identical. The only thing that shifted was proximity to the finish — and that alone was enough to accelerate effort.
+
+Hull died in 1952. He never watched an NFL game. But his rats predicted those 7,900 points.
+
+Human beings are not so different. When researchers Jonah Berger and Devin Pope analyzed more than 18,000 NBA games over fifteen years, they found something counterintuitive: teams trailing by exactly one point at halftime were more likely to win than teams leading by one point. Being slightly behind — close enough to smell the finish, but not so far behind that catching up feels impossible — triggered something in the trailing players. They came out of the locker room at a different speed. Not because the coach gave a magical speech. Because the gap was just small enough to feel closeable, and the ending was just close enough to feel real.
+
+This is not just a sports story. It is a story about how your brain manages effort across time.
+
+Psychologist Ayelet Fishbach, whose research spans goal pursuit and motivation, has documented this pattern outside stadiums as well. In studies of consumers accumulating loyalty points, people showed strong effort early, flagged badly in the middle, and surged again near the end. The shape of motivation across any pursuit is not a straight line. It is a U-curve — with the final stretch producing a burst that the middle never does.
+
+The deeper reason touches on how we encode progress. Toward the beginning of a pursuit, we are energized by how far we have come. But near the end, what drives us is the gap that remains — and the psychological urgency of closure. The finish line, once it becomes visible, activates something closer to panic than to pride. A productive panic. An uh-oh that sharpens attention rather than scattering it.
+
+Here is what makes this insight genuinely useful rather than merely interesting: you do not need a natural ending to trigger the effect. You can manufacture one.
+
+Consider how Ernest Hemingway managed his writing days. He did not stop at the end of a chapter or even the end of a paragraph. He stopped in the middle of a sentence — deliberately leaving something incomplete so that when he returned the next morning, the unfinished thought pulled him forward immediately. He was engineering a personal fast finish effect every single day. The incompleteness created urgency. The visible gap created momentum.
+
+Pink calls a related phenomenon the Zeigarnik effect: our tendency to remember unfinished tasks more vividly than completed ones. An open loop is cognitively louder than a closed one. Hemingway was not just being quirky. He was using his own psychology as fuel.
+
+You can do the same. If you are stuck in a project, do not wait for inspiration. Impose a finish line. Break the work into smaller units with real endpoints — not vague milestones but specific, time-bounded moments of completion. Tell someone when you will be done. Even an arbitrary deadline becomes real once another person is counting on it.
+
+This matters especially in education. Students who see the end of a semester as abstract and distant tend to drift in the middle — a pattern Pink documents in detail, pointing to the consistent midpoint slump in academic engagement. But students who are given visible sub-deadlines, clear checkpoints that create multiple small finish lines throughout the term, sustain effort more evenly. The enemy of the middle is invisibility. The antidote is making endings concrete.
+
+There is something almost philosophical in all of this. We do not run faster because we become stronger near the end. We run faster because something in us refuses to leave the gap unclosed. The proximity of the finish does not add to our capacity — it rearranges our priorities. Suddenly, everything that felt hard in the middle becomes negotiable. The cost of stopping feels higher than the cost of pushing through.
+
+Hull's rats knew this. The NBA's trailing teams knew this. Hemingway knew this.
+
+Now you do too. The question is whether you will use it.
+
+Today's action: Pick one task you have been drifting on. Set a specific finish-line deadline — not "this week" but a precise hour on a precise day. Tell one person about it. Then notice what happens to your pace.
+
+📌 Takeaway: You do not need more motivation — you need a visible finish line. Proximity to an ending activates effort that the middle never can. Manufacture the endings you need, and the sprint will follow.
+
+💡 Extension: Ayelet Fishbach in Get It Done explores how making progress visible at the midpoint — not just at the end — can prevent the middle slump from swallowing the fast-finish effect entirely, offering a complementary strategy for sustaining effort across the full arc of a project.
