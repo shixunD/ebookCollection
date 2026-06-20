@@ -1,3 +1,4 @@
+Demo.txt
 2026-06-20-Robert Greene, The Laws of Human Nature — The Envy You Cannot See 2018 — 你以为你在欣赏别人，其实你在悄悄恨他们.txt
 2026-06-20-Robert Greene, The 48 Laws of Power — The Surrender Paradox (1998) — 认输是最强的权力动作为什么假装顺从的人才是真正在掌控局面的人.txt
 2026-06-19-Robert Greene, The Art of Seduction — The Mirror Trap — 最大的吸引力杀手不是你做了什么而是你把注意力收回了自己身上.txt
@@ -66,4 +67,3 @@
 2026-04-24- Csikszentmihalyi, Flow — We Spend Our Lives Escaping Work, Yet Data Shows Work Is Where We Are Most Alive — 我们花一生渴望逃离工作，却不知道工作时我们其实更快乐.txt
 2026-04-23-Brene Brown, On Vulnerability in Leadership — Strong leaders do not earn trust by acting invulnerable, they earn it by staying honest under uncertainty.txt
 2026-04-23-Arthur C. Brooks, 3 Ways to Want Less and Be Happier — The real trap is not failing to get what we want, it is training ourselves to always want the next thing.txt
-1.txt
